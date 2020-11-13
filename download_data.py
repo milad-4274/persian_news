@@ -1,10 +1,5 @@
 import requests
 
-url = 'https://drive.google.com/file/d/1EhtbpIcqDVEY19fkxGaLlOnNYyMrt0Jk/view?usp=sharing'
-r = requests.get(url, allow_redirects=True)
-open('news_table_by_category.csv', 'wb').write(r.content)
-import requests
-
 def download_file_from_google_drive(id, destination):
     URL = "https://docs.google.com/uc?export=download"
 
